@@ -147,8 +147,8 @@ def about():
 
     st.markdown("---")
     st.subheader("**Grafik Pelatihan**")
-    st.image("graph/graph_mobilenetv1.png", caption="Training Plot MobileNetV1", use_column_width=True)
-    st.image("graph/graph_mobilenetv2.png", caption="Training Plot MobileNetV2", use_column_width=True)
+    st.image("graph/graph_mobilenetv1.png", caption="Training Plot MobileNetV1", use_container_width=True)
+    st.image("graph/graph_mobilenetv2.png", caption="Training Plot MobileNetV2", use_container_width=True)
 
 # ─── MAIN ────────────────────────────────────────────────────────────────────────
 if menu == "Home":
