@@ -65,11 +65,11 @@ def home():
         """
         <div style="padding: 10px; border-radius: 6px;">
           <p style="margin: 0;">
-            Aplikasi ini menggunakan dua varian MobileNet <strong>tanpa dropout</strong>,  
-            yaitu V1 dan V2. Keduanya dilengkapi dua lapisan fully-connected,  
-            dioptimasi dengan Adam, dan dilatih selama 15 epoch. 
-            <strong>MobileNetV1</strong> mencapai akurasi pelatihan sebesar <strong>95%</strong>,  
-            sedangkan <strong>MobileNetV2</strong> mencapai <strong>97%</strong>.
+            <strong>SpiceLinK</strong> adalah aplikasi web interaktif yang dirancang untuk memudahkan klasifikasi empat jenis rimpang populer di 
+            Indonesia--Jahe, Kunyit, Kencur, dan Lengkuas-- (CNNIndonesia, 2024) hanya dengan mengunggah satu gambar🌿📸. 
+            Selain klasifikasi otomatis, antarmuka aplikasi juga menampilkan gambar rempah serta manfaatnya, statistik akurasi pelatihan, dan visualisasi arsitektur, 
+            sehingga pengguna dapat memahami proses kerja model secara transparan. Dengan navigasi yang intuitif dan hasil klasifikasi real‑time, SpiceLinK siap membantu kamu. 
+            Yuk, coba SpiceLinK!✨🚀
           </p>
         </div>
         """,
