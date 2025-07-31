@@ -91,11 +91,20 @@ menu = st.sidebar.selectbox("📂 Menu", ["Home", "Classification", "About"])
 def home():
     st.title("Selamat Datang di SpiceLinK ✨")
     st.write("---")
-    st.markdown("""
-      <div style="padding:10px; border-radius:6px;">
-        <strong>SpiceLinK</strong> …
-      </div>
-    """, unsafe_allow_html=True)
+    st.markdown(
+        """
+        <div style="padding: 10px; border-radius: 6px;">
+          <p style="margin: 0;">
+            <strong>SpiceLinK</strong> adalah aplikasi web interaktif yang dirancang untuk memudahkan klasifikasi empat jenis rimpang populer di 
+            Indonesia--Jahe, Kunyit, Kencur, dan Lengkuas-- (CNNIndonesia, 2024) hanya dengan mengunggah satu gambar🌿📸. 
+            Selain klasifikasi otomatis, antarmuka aplikasi juga menampilkan gambar rempah serta manfaatnya, statistik akurasi pelatihan, dan visualisasi arsitektur, 
+            sehingga pengguna dapat memahami proses kerja model secara transparan. Dengan navigasi yang intuitif dan hasil klasifikasi real‑time, SpiceLinK siap membantu kamu. 
+            Yuk, coba SpiceLinK!✨🚀
+          </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
     st.write("---")
     st.subheader("Gambar Masing-masing Rempah")
     display_spices()
@@ -136,11 +145,20 @@ def classify():
 def about():
     st.title("❗ Tentang Model")
     st.write("---")
-    st.markdown("""
-      <div style="background-color:#FFF3CD;padding:10px;border-radius:5px;">
-        Aplikasi ini menggunakan dua varian MobileNet tanpa dropout…
-      </div>
-    """, unsafe_allow_html=True)
+    st.markdown(
+        """
+        <div style="background-color: #FFF3CD; padding: 10px; border-radius: 5px;">
+          <p style="color: #856404; margin: 0;">
+            Aplikasi ini menggunakan dua varian MobileNet <strong>tanpa dropout</strong>,  
+            yaitu V1 dan V2. Keduanya dilengkapi dua lapisan fully-connected,  
+            dioptimasi dengan Adam, dan dilatih selama 15 epoch. 
+            MobileNetV1 mencapai akurasi pelatihan sebesar 95%,  
+            sedangkan MobileNetV2 mencapai 97%.
+          </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
     st.write("---")
     st.subheader("**Arsitektur Model**")
     col1, col2 = st.columns(2)
@@ -148,10 +166,11 @@ def about():
         st.image("arc/arch_mobilenet_v1.png", caption="MobileNetV1", width=400)
     with col2:
         st.image("arc/arch_mobilenet_v2.png", caption="MobileNetV2", width=400)
+
     st.markdown("---")
     st.subheader("**Grafik Pelatihan**")
-    st.image("graph/graph_mobilenetv1.png", use_column_width=True)
-    st.image("graph/graph_mobilenetv2.png", use_column_width=True)
+    st.image("graph/graph_mobilenetv1.png", caption="Training Plot MobileNetV1", use_column_width=True)
+    st.image("graph/graph_mobilenetv2.png", caption="Training Plot MobileNetV2", use_column_width=True)
 
 # ─── MAIN ───────────────────────────────────────────────────────────────────────
 if menu == "Home":
