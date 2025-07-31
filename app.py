@@ -65,11 +65,12 @@ def display_spices():
         'Jahe':    os.path.join(spice_dir, "jahe.jpeg"),
         'Lengkuas':os.path.join(spice_dir, "lengkuas.jpeg"),
     }
+# Deskripsi untuk tiap rempah
     descriptions = {
-        'Kunyit': 'Kunyit (_Curcuma longa_) …',
-        'Kencur': 'Kencur (_Kaempferia galanga_) …',
-        'Jahe':   'Jahe (_Zingiber officinale_) …',
-        'Lengkuas': 'Lengkuas (_Alpinia galanga_) …'
+        'Kunyit': 'Kunyit (_Curcuma longa_) mengandung kurkumin dan minyak atsiri yang efektif meredakan nyeri gastritis. Senyawa tersebut membantu melapisi dinding lambung yang luka serta menurunkan produksi asam lambung, sehingga bisa mengontrol kelebihan asam di perut (Syafila et al., 2024)',
+        'Kencur': 'Kencur (_Kaempferia galanga_) Selain memperkaya cita rasa, kencur juga diolah menjadi jamu tradisional seperti beras kencur karena khasiatnya, meredakan batuk, flu, sakit kepala, keseleo, radang lambung, hingga memperlancar haid dan mengatasi radang telinga. (Hakim, 2015)',
+        'Jahe': 'Jahe (_Zingiber officinale_) tidak hanya populer sebagai bumbu, tetapi juga diolah menjadi minuman tradisional penghangat tubuh dengan khasiat meredakan sakit kepala, masuk angin, dan meningkatkan nafsu makan berkat kandungan gingerol, serta kerap diperkaya pewarna alami casiavera (Ayuchecaria et al., 2022).',
+        'Lengkuas': 'Lengkuas (_Alpinia galanga_) tidak hanya menambah aroma masakan, tetapi juga kaya akan senyawa bioaktif seperti flavonoid, alkaloid, saponin, dan fenol yang memberikan efek antitumor, antioksidan, antimikroba, penghambatan asam lambung, antiinflamasi, serta mampu menghambat pertumbuhan Klebsiella pneumoniae (Badriyah, Ifandi & Alfiza, 2023).'
     }
 
     cols = st.columns(2)
